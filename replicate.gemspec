@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
     test/active_record_test.rb
     test/dumper_test.rb
     test/dumpscript.rb
+    test/linked_dumpscript.rb
     test/loader_test.rb
     test/replicate_test.rb
   ]
@@ -35,6 +36,7 @@ Gem::Specification.new do |s|
   s.test_files = s.files.select {|path| path =~ /^test\/.*_test.rb/}
   s.add_development_dependency 'activerecord', '~> 3.1'
   s.add_development_dependency 'sqlite3'
+  s.add_development_dependency 'test_after_commit'
 
   s.require_paths = %w[lib]
 end
